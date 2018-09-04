@@ -1,0 +1,7 @@
+//- template.pug
+h1 #{title}
+
+ul.linkWrapper
+  each val in nameList
+    li
+      a(href='/'+val) #{val}

@@ -36,4 +36,4 @@ fi
 echo "SYNC_USER:"  $SYNC_USER
 echo "SYNC_URL:"  $SYNC_URL
 echo "SYNC_DIR_NAME:"  $SYNC_DIR_NAME
-rsync -rave "ssh -i ~/.ssh/your.pem"  -azP --exclude='/node_modules' ./ $SYNC_USER@$SYNC_URL:~/$SYNC_DIR_NAME
+rsync -rave "ssh -i ~/.ssh/seleniume2e.pem"  -azP --exclude='/node_modules' ./ $SYNC_USER@$SYNC_URL:~/$SYNC_DIR_NAME

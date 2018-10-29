@@ -1,0 +1,19 @@
+//- template.pug
+
+doctype html
+html
+  head
+    link(href='/static/style.css' type='text/css' rel='stylesheet')
+    link(href='/static/pipeline.css' type='text/css' rel='stylesheet')
+  body
+    h1 #{title}
+    ul.linkWrapper
+      each pipelineItem in listResult
+        li(class='pipelineLinkRow')
+          span(class='pipelineTitle') #{pipelineItem.name}
+
+          each statusItem in pipelineItem.statusList
+            span(class='statusWrapper')
+              span(class=`statusName ${statusItem.status}`) #{statusItem.stageName}
+              span(class='status') #{statusItem.status}
+              span(class='statusChangedTime') #{statusItem.lastStatusChange}

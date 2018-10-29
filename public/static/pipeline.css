@@ -1,0 +1,46 @@
+.pipelineLinkRow {
+  list-style: none;
+  margin: 5px 0;
+  border-top: gray 1px solid;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: flex;
+}
+.pipelineTitle {
+  width: 250px;
+  display: inline-block;
+}
+.statusWrapper{
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  width: 100px;
+}
+.status {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 10px;
+  color: grey;
+}
+.statusName{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: grey;
+  color: white;
+  padding: 2px 4px;
+  text-align: center;
+}
+.statusChangedTime{
+  font-size: 10px;
+
+}
+
+.statusName.Succeeded {
+  background: green;
+}
+
+.statusName.Failed{
+  background: red;
+}

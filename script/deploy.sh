@@ -1,4 +1,5 @@
 set -e
+`aws ecr get-login --no-include-email`
 npm version patch
 PKG_VERSION=`sh script/getPackageVersion.sh`
 PKG_NAME=`sh script/getPackageName.sh`

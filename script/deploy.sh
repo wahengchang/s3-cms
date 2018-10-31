@@ -9,3 +9,4 @@ docker tag $PKG_NAME:$PKG_VERSION $ECR_URL:$PKG_VERSION
 docker tag $PKG_NAME:latest $ECR_URL:latest
 docker push $ECR_URL:$PKG_VERSION
 docker push $ECR_URL:latest
+aws ecs  update-service --force-new-deployment --cluster peterTestCluster --service peterTestService10

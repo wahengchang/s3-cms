@@ -2,7 +2,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - npm install
+      - echo 'no install script'
   pre_build:
     commands:
       - echo 'no pre_build script'

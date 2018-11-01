@@ -1,0 +1,17 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - npm install
+  pre_build:
+    commands:
+      - echo 'no pre_build script'
+  build:
+    commands:
+      - echo 'no build script'
+  post_build:
+    commands:
+      - npm run deploy
+cache:
+  paths:
+    - 'node_modules/**/*'

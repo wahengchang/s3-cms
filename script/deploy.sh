@@ -12,6 +12,8 @@ docker tag $PKG_NAME:$PKG_VERSION $ECR_URL:$PKG_VERSION
 docker tag $PKG_NAME:latest $ECR_URL:latest
 
 echo '3 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-='
+echo $ECR_URL
+echo $PKG_VERSION
 docker push $ECR_URL:$PKG_VERSION
 
 echo '4 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-='

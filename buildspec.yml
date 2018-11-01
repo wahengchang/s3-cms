@@ -11,7 +11,7 @@ phases:
       - echo 'no build script'
   post_build:
     commands:
-      - npm run deploy
+      - sh script/deploy.sh
 cache:
   paths:
-    - 'node_modules/**/*'
+      - echo 'no cache script'

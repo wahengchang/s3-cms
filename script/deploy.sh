@@ -1,6 +1,6 @@
 set -e
 `aws ecr get-login --no-include-email`
-npm version patch
+# npm version patch
 PKG_VERSION=`sh script/getPackageVersion.sh`
 PKG_NAME=`sh script/getPackageName.sh`
 docker build -t $PKG_NAME:$PKG_VERSION . 

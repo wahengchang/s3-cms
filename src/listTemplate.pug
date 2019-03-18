@@ -6,6 +6,7 @@ html
     link(href='/static/style.css' type='text/css' rel='stylesheet')
   body
     h1 #{title}
+    a(class='reportLink' href='/pipelines') Pipelines
     ul.linkWrapper
       each val in nameList
         li(class='linkRow')

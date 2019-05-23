@@ -6,7 +6,6 @@ const pug = require('pug');
 router.get('/', async function (req, res) {
   try {
     const allFileInBucket = await S3.listFile()
-
     const htmlFileList = allFileInBucket
     .filter(item => {
       return item.Key.split('.').slice(-1)[0] === 'html'

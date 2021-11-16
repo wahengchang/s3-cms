@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/wahengchang/s3-cms#readme",
   "dependencies": {
-    "aws-sdk": "^2.307.0",
+    "aws-sdk": "^2.814.0",
     "express": "^4.16.3"
   },
   "devDependencies": {
